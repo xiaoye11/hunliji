@@ -10,4 +10,11 @@
 
 @interface StoryViewController : UIViewController
 
+@property(nonatomic, retain) UITableView *tableView;
+
+@property(nonatomic, retain) NSDictionary *dictionary;
+
+@property(nonatomic, retain) UIView *anotherView;
+
+@property(nonatomic, retain) NSMutableArray *array;
 @end

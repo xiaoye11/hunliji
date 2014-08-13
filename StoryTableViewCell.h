@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface StoryTableViewCell : UITableViewCell
-
+@property (nonatomic, retain) UIImageView *bigImage;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, retain) UIImageView *smallImage;
+@property (nonatomic, retain) UILabel *smallLabel;
 @end

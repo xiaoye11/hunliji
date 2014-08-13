@@ -10,4 +10,19 @@
 
 @interface MainViewController : UIViewController
 
+@property (nonatomic, retain) UIScrollView *scroll1;
+
+@property (nonatomic, retain) UIScrollView *scroll2;
+
+@property (nonatomic, retain) UIScrollView *scroll3;
+
+@property (nonatomic, retain) UIScrollView *scroll4;
+
+@property (nonatomic, retain) UIScrollView *scrollView;
+
+@property (nonatomic, retain) UITableView *tableView;
+
+@property (nonatomic, retain) UIScrollView *smallScrollView;
+
+@property (nonatomic, retain) NSMutableDictionary *dic;
 @end

@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AsynGETConnect : NSObject
+typedef void (^AsynGetConnectBlock)(NSData *data);
+
+@interface AsynGETConnect : NSObject<NSURLConnectionDataDelegate>
+
+@property (nonatomic, retain) NSMutableData *data;
+
+//@property (nonatomic, assign) id<AsynGETConnectDelegate> delegate;
+
+@property (nonatomic, copy) AsynGetConnectBlock asynBlock;
+
+-(void)startConnect:(NSString *)urlStr dictionary:(NSDictionary*)dictionary block:(AsynGetConnectBlock) block;
 
 @end

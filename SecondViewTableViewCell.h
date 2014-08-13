@@ -10,4 +10,14 @@
 
 @interface SecondViewTableViewCell : UITableViewCell
 
+@property(nonatomic, retain) UIImageView *image;
+
+@property(nonatomic, retain) UILabel *titleLabel;
+
+@property(nonatomic, retain) UILabel *detailLabel;
+
+@property(nonatomic, retain) UILabel *numLabel;
+
+@property(nonatomic, retain) UILabel *fansLabel;
+
 @end

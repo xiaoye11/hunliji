@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Collect.h"
 @interface MarryDao : NSObject
 
++ (void)insert:(Collect*)collect;
++ (void)delete:(NSString *)httpLocation;
++(BOOL)select:(NSString *)httpLocation;
 @end

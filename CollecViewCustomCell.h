@@ -10,4 +10,10 @@
 
 @interface CollecViewCustomCell : UITableViewCell
 
+@property (nonatomic, retain) UIImageView *titleImage;
+
+@property (nonatomic, retain) UIView *viewButton;
+
+@property (nonatomic, retain) UILabel *description;
+
 @end

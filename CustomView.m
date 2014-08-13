@@ -14,7 +14,19 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.img = [[UIImageView alloc] initWithFrame:CGRectMake(10, 8, 25, 25)];
+        [self addSubview:self.img];
+        
+        self.label = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, 200, self.frame.size.height)];
+        [self.label setTextColor:[UIColor grayColor]];
+        [self.label setFont:[UIFont fontWithName:@"Avenir" size:14]];
+        [self addSubview:self.label];
+        [self.label release];
+        
+        self.next = [[UIImageView alloc] initWithFrame:CGRectMake(270, 10, 10, 12)];
+        [self.next setImage:[UIImage imageNamed:@"webNextGray.png"]];
+        [self addSubview:self.next];
+        [self.next release];
     }
     return self;
 }

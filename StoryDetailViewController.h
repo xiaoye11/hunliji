@@ -10,4 +10,9 @@
 
 @interface StoryDetailViewController : UIViewController
 
+@property (nonatomic, copy) NSString *stringId;
+
+@property (nonatomic, retain) UITableView *tableView;
+
+@property (nonatomic, retain) NSMutableDictionary *dictionaty;
 @end

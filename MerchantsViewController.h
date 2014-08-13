@@ -10,4 +10,12 @@
 
 @interface MerchantsViewController : UIViewController
 
+@property (nonatomic, retain) UITableView *tableView;
+
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
+
+@property (nonatomic, retain) NSMutableString *stringId;
+
+@property (nonatomic, retain) NSMutableDictionary *dic;
+
 @end

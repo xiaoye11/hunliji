@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <sqlite3.h>
 @interface DB : NSObject
-
++(sqlite3 *)dbOpne;
 @end

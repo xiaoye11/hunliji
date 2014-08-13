@@ -10,4 +10,7 @@
 
 @interface Collect : NSObject
 
+@property (nonatomic, assign) NSInteger collectId;
+
+@property (nonatomic, retain) NSString *httploc;
 @end

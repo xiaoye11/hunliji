@@ -10,4 +10,9 @@
 
 @interface CustomView : UIView
 
+@property (nonatomic, retain) UIImageView *img;
+
+@property (nonatomic, retain) UILabel *label;
+
+@property (nonatomic, retain) UIImageView *next;
 @end

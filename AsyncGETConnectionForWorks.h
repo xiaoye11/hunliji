@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AsyncGETConnectionForWorks : NSObject
+@protocol AsynGETConnectForWorksDelegate <NSObject>
+
+-(void)sendDataFrowWoks:(NSData *)data;
+
+@end
+
+@interface AsyncGETConnectionForWorks : NSObject<NSURLConnectionDataDelegate>
+
+@property (nonatomic, retain) NSMutableData *data;
+
+@property (nonatomic, assign) id<AsynGETConnectForWorksDelegate> delegate;
+
+-(void)startConnectForWorks:(NSString *)urlStr dictionary:(NSDictionary*)dictionary;
 
 @end

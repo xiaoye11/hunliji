@@ -10,4 +10,11 @@
 
 @interface FirstPageTableViewCell : UITableViewCell
 
+@property (nonatomic, retain) UIImageView *bigImage;
+
+@property (nonatomic, retain) UIImageView *smallImageOne;
+
+@property (nonatomic, retain) UIImageView *smallImageTwo;
+
+@property (nonatomic, retain) UILabel *label;
 @end

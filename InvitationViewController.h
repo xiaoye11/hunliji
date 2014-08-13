@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "InfiniteScrollPicker.h"
 @interface InvitationViewController : UIViewController
 
+@property (nonatomic, retain) NSMutableArray *array;
+
+@property (nonatomic, retain) UIScrollView *scrollView;
+
+@property (nonatomic, retain) UIImageView *ima;
+
+@property (nonatomic, retain) UIPageControl *pageControl;
 @end

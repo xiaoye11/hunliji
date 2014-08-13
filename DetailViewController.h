@@ -10,4 +10,15 @@
 
 @interface DetailViewController : UIViewController
 
+@property (nonatomic, retain) UITableView *tableView;
+
+@property (nonatomic, copy) NSString *stringId;
+
+@property (nonatomic, retain) NSMutableDictionary *dictronary;
+
+@property (nonatomic, retain) NSString *path;
+
+@property (nonatomic, assign) NSInteger num;
+
+@property (nonatomic, retain) UIView *footer;
 @end

@@ -9,12 +9,29 @@
 #import "StoryDetailCell.h"
 
 @implementation StoryDetailCell
-
+- (void)dealloc
+{
+    [_bigImage release];
+    [_titleLabel release];
+    [_description release];
+    [super dealloc];
+}
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        self.bigImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 100)];
+        
+        self.description = [[UILabel alloc] init];
+        self.description.numberOfLines = 0;
+        self.description.textColor = [UIColor grayColor];
+        UIFont *font = [UIFont fontWithName:@"Avenir" size:14];
+        [self.description setFont:font];
+
+        [self.contentView addSubview:self.description];
+        [self.contentView addSubview:self.bigImage];
+        [self.description release];
+        [self.bigImage release];
     }
     return self;
 }

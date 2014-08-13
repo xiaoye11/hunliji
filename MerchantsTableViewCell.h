@@ -9,5 +9,26 @@
 #import <UIKit/UIKit.h>
 
 @interface MerchantsTableViewCell : UITableViewCell
+@property (nonatomic, retain) UIView *locationView;
+
+@property (nonatomic, retain) UILabel *location;
+
+@property (nonatomic, retain) UIImageView *locImage;
+
+@property (nonatomic, retain) UIImageView *nextImage;
+
+@property (nonatomic, retain) UIButton *leftButton;
+
+@property (nonatomic, retain) UIButton *rightButton;
+
+@property (nonatomic, retain) UILabel *introduce;
+
+@property (nonatomic, retain) UILabel *blog;
+
+@property (nonatomic, retain) UILabel *qq;
+
+@property (nonatomic, retain) UILabel *wechat;
+
+@property (nonatomic, retain) UILabel *city;
 
 @end
